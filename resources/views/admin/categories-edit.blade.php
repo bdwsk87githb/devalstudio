@@ -17,7 +17,14 @@
                                 <h4 id="">Название категории:</h4>
                                 <input id="category_name" class="form-control" type="text" value=""  placeholder="Название">
                                 <h4 id="">Родительская категория:</h4>
-                                <input id="category_parent" class="form-control" type="text" value=""  placeholder="Название">
+                                <select class="form-control" id="category_parent">
+                                    @if($categories)
+                                            <option value="null" selected="selected">Выберите категорию</option>
+                                        @foreach ($categories as $category)
+                                            <option value="{{$category->id}}">{{$category->title}}</option>
+                                        @endforeach
+                                    @endif
+                                </select>    
                             </div>
                         </div>
 					</form>
