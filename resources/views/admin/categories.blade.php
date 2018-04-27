@@ -2,7 +2,12 @@
 @section('content')
 <div class="box">
 <div class="box-header">
+
     <h3 class="box-title">Категории</h3>
+
+    <br>
+    <a href="/categories/create">Добавить категорию</a>
+
     <br><br>
     <table id="datatable" class="table table-bordered table-striped dataTable">
     @if($categories)

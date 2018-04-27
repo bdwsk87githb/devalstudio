@@ -18,7 +18,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/admin', function () {
         return view('admin/index');
     });
-
+    
+    // Категории
+    Route::resource('/categories', 'CategoryController'); 
     Route::get('/admin/categories', 'CategoryController@adminCategoryList')->name('home');
 
 });
