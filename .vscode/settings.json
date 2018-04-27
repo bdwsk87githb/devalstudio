@@ -1,0 +1,27 @@
+{
+    "php.validate.executablePath": "/usr/bin/php",
+    "phpcs.standard": "PSR2",
+    "php-cs-fixer.config": "/home/sanek/www/kp10-ru/.vscode/.php_cs",
+    "editor.fontSize": 12,
+    "window.zoomLevel": -1,
+    "markdown.preview.lineHeight": 1.0,
+    "editor.fontFamily": "'DejaVu Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "phpcs.executablePath": "/home/sanek/www/phpcs/bin/phpcs",
+    "phpcs.ignorePatterns": [  
+        ".blade.php" 
+    ], 
+    "php.suggest.basic": false, 
+    "files.autoSave": "onFocusChange", 
+    "editor.tabCompletion": true,  
+    "todohighlight.keywords": [ 
+        {
+            "text": "TODO-N:",
+            "color": "white",
+            // "border": "1px solid white",
+            // "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "rgb(8,65,249)",
+            //other styling properties goes here ... 
+        }
+    ],
+    
+}   
