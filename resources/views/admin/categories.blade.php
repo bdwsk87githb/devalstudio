@@ -6,7 +6,7 @@
     <h3 class="box-title">Категории</h3>
 
     <br>
-    <a href="/categories/create">Добавить категорию</a>
+    <a href="/admin/categories/create">Добавить категорию</a>
 
     <br><br>
     <table id="datatable" class="table table-bordered table-striped dataTable">

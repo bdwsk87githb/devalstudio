@@ -13,4 +13,6 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .js('resources/assets/js/admin/category-edit.js', 'public/js/admin/category-edit.min.js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+   
+   .sass('resources/assets/sass/app.scss', 'public/css')
+   .sass('resources/assets/sass/pages/bootstrap.scss', 'public/css')

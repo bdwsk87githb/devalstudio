@@ -1,7 +1,12 @@
 @extends('layouts.admin.app')
 
+
 @section('adminlte_js')
 <script src="{{asset('js/admin/category-edit.min.js')}}"></script>
+@endsection
+
+@section('content_header')
+q2312312
 @endsection
 
 @section('content')
