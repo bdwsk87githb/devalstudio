@@ -1,0 +1,24 @@
+{
+  "name": "deval",
+  "description": "deval",
+  "main": "bower",
+  "authors": [
+    "deval"
+  ],
+  "license": "deval",
+  "keywords": [
+    "deval"
+  ],
+  "homepage": "deval",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

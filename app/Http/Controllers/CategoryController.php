@@ -19,6 +19,6 @@ class CategoryController extends Controller
     public function create()
     { 
         $allCategories = Category::all();
-        return view('admin/categories-edit',['categories'=>$allCategories]);
+        return view('admin/category-edit',['categories'=>$allCategories]);
     }
 }

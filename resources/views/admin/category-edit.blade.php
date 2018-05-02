@@ -1,7 +1,5 @@
 @extends('layouts.admin.app')
 @section('content')
-
-
 <section class="content" id="product-edit-app">
 		<div class="row">
 			<!-- left column -->
@@ -9,7 +7,7 @@
 				<!-- general form elements -->
 				<div class="box box-primary">
 					<div class="box-header with-border">
-						<h4 class="box-title">Товар : </h4>
+						<h4 class="box-title">Добавление новой категории</h4>
 					</div>
 					<form role="form">
                         <div class="box-body">
@@ -25,6 +23,14 @@
                                         @endforeach
                                     @endif 
                                 </select>    
+                                <h4 id="">Описание категории:</h4>
+                                <textarea id="category-description" class="form-control"></textarea>
+                                <h4 id="">Контент:</h4>
+                                <textarea id="category-content" class="form-control"></textarea>
+                                <br>
+    	                        <button data-type="" @click.prevent="saveProduct"
+								        class="btn btn-primary save-product">Добавить
+								</button>
                             </div>
                         </div>
 					</form>
@@ -32,4 +38,11 @@
 			</div>
 		</div>
 	</section> 
+@endsection
+@section('adminlte_js')
+<script src="{{asset('/js/admin/tinymce/tinymce.min.js')}}"> 
+
+<script> 
+alert('hello');
+</script>
 @endsection
