@@ -37,6 +37,10 @@
 
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+
+    <script src="{{asset('js/admin/ckeditor/ckeditor.js')}}" type="text/javascript" charset="utf-8" ></script>
+
 </head>
 <body class="hold-transition @yield('body_class')">
 
@@ -64,4 +68,7 @@
 @yield('adminlte_js')
 
 </body>
+
+
+
 </html>

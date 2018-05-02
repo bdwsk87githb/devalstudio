@@ -40,9 +40,7 @@
 	</section> 
 @endsection
 @section('adminlte_js')
-<script src="{{asset('/js/admin/tinymce/tinymce.min.js')}}"> 
-
 <script> 
-alert('hello');
+  CKEDITOR.replace('category-content');
 </script>
 @endsection
