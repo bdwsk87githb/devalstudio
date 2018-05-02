@@ -11,6 +11,7 @@ window.categoryEdit = new Vue({
     },
     mounted: function () {
         this.editor = CKEDITOR.replace('category-content');
+     
     },
     methods: {
         start() {
@@ -18,19 +19,19 @@ window.categoryEdit = new Vue({
         },
         saveCategory(){
             this.categoryContent = this.editor.getData();         
-
             let category = {
                 'categoryParent':  this.categoryParent,
                 'categoryTitle': this.categoryTitle,
                 'categoryDescription':  this.categoryDescription,
                 'categoryContent':  this.categoryContent       
             };
-
             axios.post('/admin/categories', {
                 category: category
             }).then(function (response) {
-                
+                location.href = "/admin/categories";
             });
         }
     }
     });     
+
+    
