@@ -25,6 +25,11 @@
                                 </select>    
                                 <h4 id="">Описание категории:</h4>
                                 <textarea id="category-description" class="form-control"></textarea>
+                            
+                            </div>
+
+
+                            <div class="col-md-12">
                                 <h4 id="">Контент:</h4>
                                 <textarea id="category-content" class="form-control"></textarea>
                                 <br>
