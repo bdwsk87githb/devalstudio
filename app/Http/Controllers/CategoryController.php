@@ -21,4 +21,17 @@ class CategoryController extends Controller
         $allCategories = Category::all();
         return view('admin/category-edit',['categories'=>$allCategories]);
     }
+
+    public function store(Request $request)
+    {
+        $category = new Category;
+        $category->parent_id = $request->category['categoryParent'];
+        $category->title = $request->category['categoryTitle'];
+        $category->description = $request->category['categoryDescription'];
+        $category->content = $request->category['categoryContent'];
+        $category->save();
+    }
+
+
+
 }

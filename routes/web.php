@@ -20,7 +20,7 @@ Route::middleware(['auth'])->group(function () {
     });
     
     // Категории
-    Route::resource('/categories', 'CategoryController'); 
+    Route::resource('/admin/categories', 'CategoryController'); 
     Route::get('/admin/categories', 'CategoryController@adminCategoryList')->name('home');
 
 });

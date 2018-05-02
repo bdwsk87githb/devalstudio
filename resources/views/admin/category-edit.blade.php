@@ -1,4 +1,9 @@
 @extends('layouts.admin.app')
+
+@section('adminlte_js')
+<script src="{{asset('js/admin/category-edit.min.js')}}"></script>
+@endsection
+
 @section('content')
 <section class="content" id="product-edit-app">
 		<div class="row">
@@ -13,9 +18,9 @@
                         <div class="box-body">
                             <div class="col-md-8">
                                 <h4 id="">Название категории:</h4>
-                                <input id="category_name" class="form-control" type="text" value=""  placeholder="Название">
+                                <input v-model="categoryTitle" id="" class="form-control" type="text" value=""  placeholder="Название">
                                 <h4 id="">Родительская категория:</h4>
-                                <select class="form-control" id="category_parent">
+                                <select v-model="categoryParent" class="form-control" id="category_parent">
                                     @if($categories)
                                             <option value="null" selected="selected">Выберите категорию</option>
                                         @foreach ($categories as $category)
@@ -24,16 +29,13 @@
                                     @endif 
                                 </select>    
                                 <h4 id="">Описание категории:</h4>
-                                <textarea id="category-description" class="form-control"></textarea>
-                            
+                                <textarea v-model="categoryDescription" id="category-description" class="form-control"></textarea>
                             </div>
-
-
                             <div class="col-md-12">
                                 <h4 id="">Контент:</h4>
                                 <textarea id="category-content" class="form-control"></textarea>
                                 <br>
-    	                        <button data-type="" @click.prevent="saveProduct"
+    	                        <button data-type="" @click.prevent="saveCategory"
 								        class="btn btn-primary save-product">Добавить
 								</button>
                             </div>
@@ -43,9 +45,4 @@
 			</div>
 		</div>
 	</section> 
-@endsection
-@section('adminlte_js')
-<script> 
-  CKEDITOR.replace('category-content');
-</script>
 @endsection
